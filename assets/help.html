@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDriveSafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style/help.css">
+
+    <script src="https://kit.fontawesome.com/930dfd426c.js" crossorigin="anonymous"></script>
+    <script src="../test.js"></script>
+</head>
+<body>
+    <nav class="navbar-default bg-dark p-2">
+        <ul class="ms-5 nav ps-4">
+          <li class="mr-3 nav-item high ms-3"><a class="nav-link" href="../index.html"> Home</a></li>
+          <li class=" mr-3 nav-item high"><a class=" nav-link " href="./about.html"> About Us</a></li>
+          <li class=" mr-3 nav-item high"><a class=" nav-link bg-light text-dark " href="#"> Help</a></li>
+          <li class=" mr-4 nav-item high"><a class=" nav-link" href="./news.html"> Update</a></li>
+          <!-- <li class=" mr-3 nav-item"><select class="nav-link w-50 align-middle" id="my-select"></select></li> -->
+          <!-- <li class="text-light mr-3 list-group-item bg-dark"><select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="bg-dark text-light border-0 w-50 overflow-auto" required></select></li> -->
+
+              <!-- <li class="text-light mr-3 list-group-item bg-dark ms-auto">iDriveSafe</li> -->
+              <li class="nav-item dropdown ms-auto">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    iDriveSafe
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Log In</a></li>
+                    <li><a class="dropdown-item" href="#">Register</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <img src="../logo.png" class="rounded-circle position-absolute top-0 w-6" alt="...">
+          </nav>
+
+
+          <nav>
+            <button id="gets" class="secondNav ms-5 mt-4 btn text-primary">Get Support</button>
+            <button id="cnt" class="secondNav btn ms-2 mt-4">Contact Us</button>
+            <!-- <ul class="nav ms-4  my-4">
+                <li class=" nav-link">Get Support</li>
+                <li class="text-dark nav-link">Contact Us</li>
+            </ul> -->
+          </nav>
+          <div class="d-flex">
+          <!-- <div class="w-75"> -->
+          <div id = "help1" class="ratio ratio-16x9 me-3">
+            <iframe  class=" mr-3 pt-3 ps-5" src="./help1.html" title="Product Page"></iframe>
+          </div>
+
+          <div id = "help2" class="ratio ratio-16x9 d-none  me-3">
+            <iframe  class=" mr-3 pt-3 ps-5" src="./help2.html" title="contact Page"></iframe>
+          </div>
+
+          <div class="w-25 me-3">
+            <div class="card-body card info-card-bg text-light" style="border-radius: 20px;">
+                <h5>Reach Us</h5>
+                <em>123 Main Street, Suite 456 
+                    iDriveSafe Organization 
+                    Mumbai, India 12345</em>
+                    <h5 class="mt-4">Helpline</h5>
+                    <em>0734-255633 <br>
+                        info@iDriveSafe.com</em>
+
+                        <h5 class="mt-4">Follow Us</h5>
+                        <div class="d-flex mb-1">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands mx-3 fa-twitter"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+            </div>
+
+            <div>
+                <!-- <img src="../images/Group 28.png" class="mt-2 w-100" alt=""> -->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5509627285085099"
+     crossorigin="anonymous"></script>
+<!-- iDriveSafe -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5509627285085099"
+     data-ad-slot="7301330359"
+     data-ad-format="auto"
+     data-adtest="on"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+          </div>
+        </div>
+
+        <script>
+            gets = document.getElementById("gets");
+            cnt = document.getElementById("cnt");
+            help1 = document.getElementById("help1");
+            help2 = document.getElementById("help2");
+            gets.onclick=()=>{
+                gets.classList.toggle('text-primary');
+                cnt.classList.toggle('text-primary');
+                help1.classList.toggle('d-none');
+                help2.classList.toggle('d-none');
+            }
+            cnt.onclick=()=>{
+                gets.classList.toggle('text-primary');
+                cnt.classList.toggle('text-primary');
+                help1.classList.toggle('d-none');
+                help2.classList.toggle('d-none');
+            }
+        </script>
+
+</body>
+</html>

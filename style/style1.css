@@ -1,0 +1,191 @@
+body{
+    /* background-color: hsl(0, 0%, 1%); */
+    /* background-image: url("./Tobuhub.png"); */
+    /* font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-size: 200vh 100vh; */
+    overflow: hidden;
+  }
+  
+  .bg-blacks{
+    margin: -10px;
+    /* padding: 0; */
+    /* width: 55%; */
+    height: 150vh;
+    /* background-color: rgb(0, 0, 0); */
+  }
+  
+  .blue{
+    background-color: rgb(57, 176, 232);
+    border-radius: 30px !important; 
+    height: 70vh !important;
+    width: 28% !important;
+    z-index: 0;
+    /* position: absolute; */
+    left: 26% !important; 
+    top: 15% !important;
+    }
+
+  /* .blue-pos{
+    left: 26% !important; 
+    top: 50% !important;
+  }
+  .blue1-pos{
+    left: 0% !important; 
+    top: 40% !important;
+  } */
+  
+  
+  
+  .container{
+    /*border:1px solid white;*/
+    border-radius: 2px;
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex; 
+  } */
+  .backbox{  
+    /* background-color: #070707; */
+    position: absolute;
+    transform: translate(0,-50%);
+    top:50%;
+    display: inline-flex;
+    border-radius: 10px;
+  }
+  
+  .frontbox{
+    background-color: white;
+    border-radius: 20px;
+    /* height: 80%;
+    width: 30%; */
+    z-index: 10;
+    position: absolute;
+    top: 9%;
+    right:0;
+    margin-right: 3%;
+    margin-left: 3%;
+    transition: right .8s ease-in-out;
+  }
+  
+  
+  
+  .moving{
+    right:60%;
+  }
+  
+  .loginMsg{
+    font-size: 15px;
+    position: relative;
+    top: 30%;
+    left: 10%;
+  }
+  .signupMsg{
+    font-size: 15px;
+    position: relative;
+    top: 30%;
+    left: 40%;
+  }
+  
+  .loginMsg .title,
+  .signupMsg .title{
+    font-weight: 300;
+    /* font-size: 23px; */
+  }
+  
+  .loginMsg p,
+  .signupMsg p {
+    font-weight: 100;
+  }
+  
+  /* .textcontent{
+    color:white;
+    margin-top:65px;
+    margin-left: 12%;
+  } */
+  
+  .loginMsg button,
+  .signupMsg button {
+    background-color: #404040;
+    border: 2px solid white;
+    border-radius: 10px;
+    color:white;
+    font-size: 12px;
+    box-sizing: content-box;
+    font-weight: 300;
+    padding:10px;
+    margin-top: 20px;
+  }
+  
+  /* front box content*/
+  .login{
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .signup{
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .login h2,
+  .signup h2 {
+    color: #35B729;
+    font-size:22px;
+  }
+  
+  .inputbox{
+    margin-top:15px; 
+  }
+  .login input, 
+  .signup input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    background-color: #f2f2f2;
+    border: none;
+    margin-bottom:20px;
+    font-size: 12px;
+  }
+  
+  .login button,
+  .signup button{
+    font-size: 12px;
+    font-weight: 300;
+    box-sizing: content-box;
+    padding:10px;
+    border-radius: 10px;
+    width: 60px;
+    position: absolute;
+    right:25px;
+    cursor: pointer;
+  }
+  
+  /* Fade In & Out*/
+  .login p {
+    cursor: pointer;
+    color:#404040;
+    font-size:15px;
+  }
+  
+  .loginMsg, .signupMsg{
+    /*opacity: 1;*/
+    transition: opacity .8s ease-in-out;
+  }
+  
+  .visibility{
+    opacity: 0;
+  }
+  
+  .hide{
+    display: none;
+  }
+  
+  
+  .btnpos{
+    position: absolute;
+    bottom:20px;
+    right: 30px;
+  }

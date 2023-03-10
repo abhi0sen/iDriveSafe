@@ -1,0 +1,35 @@
+.w-80 {
+    width: 80% !important;
+  }
+.bg-tertiary{
+  background-color: #EEEEEE !important;
+}
+.w-6 {
+  width: 5% !important;
+  z-index: 20;
+}
+
+.high:hover {
+  background: rgb(161, 161, 161) !important;
+}
+nav a{
+  text-decoration: none;
+  color: white !important;
+}
+/* nav a:focus {
+  background-color: rgb(255, 255, 255) !important;
+  color: black !important;
+} */
+
+nav select{
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: white !important;
+  border: none;
+  align-self: center;
+  align-items: center;
+}
+
+nav select option{
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: rgb(0, 0, 0) !important;
+}
