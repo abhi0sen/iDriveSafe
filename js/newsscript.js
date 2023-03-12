@@ -52,7 +52,7 @@
 //   return card
 // }
 
-let url = "https://newsapi.org/v2/everything?q=tesla&from=2023-02-09&sortBy=publishedAt&apiKey=d48a535c2ca14480907f88f8beeb76d4"
+let url = "https://newsapi.org/v2/everything?q=tesla&from=2023-02-12&sortBy=publishedAt&apiKey=356e24970cd84ebf95aa3db8c50c8e56"
 
 fetch(url)
   .then(response => response.json())

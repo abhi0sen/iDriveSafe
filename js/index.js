@@ -56,7 +56,9 @@ function register() {
 
       // DOne
       alert('User Created!!')
-      window.location.assign("../index.html")
+      setTimeout(function(){
+        window.location.assign("../index.html")
+      },3000)
     })
   // .catch(function(error) {
   //   // Firebase will use this to alert of its errors

@@ -29,6 +29,9 @@
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                   <li><a class="dropdown-item" href="./login.html">Log In</a></li>
                   <li><a class="dropdown-item" href="./assets/create.html">Register</a></li>
+                  <li><body>
+                    <button id="deleteAccountBtn">Delete Account Data</button>
+                </li>
                 </ul>
               </li>
             </ul>
@@ -63,5 +66,38 @@
 
           <script src="./test.js"></script>
           <script src="./js/testimonial.js"></script>
+          <!-- <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"></script> -->
+    <!-- <script>
+        // Replace the values below with your Firebase project's configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCjrFNgA9VWB4rcJ5jJGxkY4ZLWX352Uzw",
+            authDomain: "test004-d8807.firebaseapp.com",
+            databaseURL: "https://test004-d8807-default-rtdb.firebaseio.com",
+            projectId: "test004-d8807",
+            storageBucket: "test004-d8807.appspot.com",
+            messagingSenderId: "770130140909",
+            appId: "1:770130140909:web:e8ed98829617e2b0bcf6e4"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Get a reference to the user's account data in the database and delete it when the button is clicked
+        const deleteAccountBtn = document.getElementById("deleteAccountBtn");
+        deleteAccountBtn.addEventListener("click", function () {
+            const userId = firebase.auth().currentUser.uid;
+            const userRef = firebase.database().ref("users/" + userId);
+
+            userRef.remove()
+                .then(() => {
+                    console.log("User account data deleted successfully");
+                })
+                .catch((error) => {
+                    console.error("Error deleting user account data: ", error);
+                });
+        });
+    </script> -->
+
 </body>
 </html>
