@@ -117,7 +117,7 @@
     "capital": "admin", 
     "population": "3382000", 
     "population_proper": "3382000",
-    "image": ""
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Chhota_imambara_Lucknow.jpg"
   }, 
   {
     "city": "Jaipur", 
@@ -358,7 +358,7 @@
     "capital": "", 
     "population": "1267564", 
     "population_proper": "1267564",
-    "image": "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Marble_Rocks_-_Jabalpur.jpg/1200px-Marble_Rocks_-_Jabalpur.jpg"
   }, 
   {
     "city": "Thāne", 
@@ -382,7 +382,7 @@
     "capital": "", 
     "population": "1246000", 
     "population_proper": "219636",
-    "image": "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bhatinda_fall.jpg"
   }, 
   {
     "city": "Allahābād", 
@@ -394,7 +394,7 @@
     "capital": "", 
     "population": "1201000", 
     "population_proper": "1073438",
-    "image": "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Main_Building_of_Allahabad_University_-_Allahabad_-_Uttar_Pradesh_-_India_-_02_%2812566337194%29.jpg/1024px-Main_Building_of_Allahabad_University_-_Allahabad_-_Uttar_Pradesh_-_India_-_02_%2812566337194%29.jpg"
   }, 
   {
     "city": "Vārānasi", 
@@ -430,7 +430,7 @@
     "capital": "", 
     "population": "1132383", 
     "population_proper": "1132383",
-    "image": "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Golden_Temple_Amritsar.jpeg/1200px-Golden_Temple_Amritsar.jpeg"
   }, 
   {
     "city": "Alīgarh", 
@@ -442,7 +442,7 @@
     "capital": "", 
     "population": "1131160", 
     "population_proper": "1131160",
-    "image": "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/AMU_Masjid_-_panoramio.jpg"
   }, 
   {
     "city": "Bhiwandi", 
@@ -454,7 +454,7 @@
     "capital": "", 
     "population": "1125898", 
     "population_proper": "1125898",
-    "image": "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Navi_Mumbai_Municipality_Corporation.jpeg"
   }, 
   {
     "city": "Gwalior", 
@@ -466,7 +466,7 @@
     "capital": "", 
     "population": "1101981", 
     "population_proper": "1101981",
-    "image": "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Navi_Mumbai_Municipality_Corporation.jpeg"
   }, 
   {
     "city": "Bhilai", 
@@ -502,7 +502,7 @@
     "capital": "admin", 
     "population": "1073440", 
     "population_proper": "1073440",
-    "image": "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Ranchi_9245.JPG"
   }, 
   {
     "city": "Vijaywada", 
@@ -1645,7 +1645,7 @@
     "capital": "", 
     "population": "183001", 
     "population_proper": "172366",
-    "image": ""
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Tapti_river_%285%29.jpg/1200px-Tapti_river_%285%29.jpg"
   }, 
   {
     "city": "Shrīrāmpur", 
@@ -2323,7 +2323,7 @@
     "capital": "", 
     "population": "56618", 
     "population_proper": "56618",
-    "image": ""
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Bhaktivedanta_Swami_Marg_-_Vrindaban_2013-02-24_6736.JPG/1200px-Bhaktivedanta_Swami_Marg_-_Vrindaban_2013-02-24_6736.JPG"
   }, 
   {
     "city": "Mandapeta", 
@@ -2469,7 +2469,7 @@
     "capital": "", 
     "population": "40000", 
     "population_proper": "40000",
-    "image": ""
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Junnar_city.jpg/640px-Junnar_city.jpg"
   }, 
   {
     "city": "Damān", 
@@ -2555,7 +2555,7 @@
     "capital": "", 
     "population": "32905", 
     "population_proper": "32905",
-    "image": ""
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Fatehpur_Sikri_042.JPG/800px-Fatehpur_Sikri_042.JPG"
   }, 
   {
     "city": "Narasannapeta", 
