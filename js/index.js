@@ -57,7 +57,7 @@ function register() {
       // DOne
       alert('User Created!!')
       setTimeout(function(){
-        window.location.assign("../index.html")
+        window.location.assign("../home.html")
       },3000)
     })
   // .catch(function(error) {
@@ -100,7 +100,11 @@ function login() {
 
       // DOne
       alert('User Logged In!!')
-      window.location.assign("./index.html")
+      //window.location.assign("./index.html")
+      setTimeout(function(){
+        window.location.assign("./home.html")
+      },3000)
+    // })
 
     })
     .catch(function (error) {

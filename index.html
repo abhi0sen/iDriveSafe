@@ -1,103 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iDriveSafe</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
     
-  </head>
-  <body>
-    <nav class="navbar-default bg-dark p-2">
-      <ul class="ms-5 nav ps-4">
-        <li class="mr-3 nav-item high ms-3"><a class="nav-link bg-light text-dark " href="#"> Home</a></li>
-        <li class=" mr-3 nav-item high"><a class=" nav-link " href="../assets/about.html"> About Us</a></li>
-        <li class=" mr-3 nav-item high"><a class=" nav-link" href="./assets/help.html"> Help</a></li>
-        <li class=" mr-4 nav-item high"><a class=" nav-link" href="./assets/news.html"> Update</a></li>
-        <li class=" mr-3 nav-item"><select class="nav-link w-50 align-middle" id="my-select">State</select></li>
-        <!-- <li class="text-light mr-3 list-group-item bg-dark"><select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="bg-dark text-light border-0 w-50 overflow-auto" required></select></li> -->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 
-            <!-- <li class="text-light mr-3 list-group-item bg-dark ms-auto">iDriveSafe</li> -->
-            <li class="nav-item dropdown ms-auto">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  iDriveSafe
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./login.html">Log In</a></li>
-                  <li><a class="dropdown-item" href="./assets/create.html">Register</a></li>
-                  <li><body>
-                    <button id="deleteAccountBtn">Delete Account Data</button>
-                </li>
-                </ul>
-              </li>
-            </ul>
-            <img src="./logo.png" class="rounded-circle position-absolute top-0 w-6" alt="...">
-        </nav>
-        <!-- <section class="CardList d-flex flex-wrap">
-        </section> -->
-        <!-- <script language="javascript">print_state("sts");</script> -->
+  <link rel="stylesheet" type="text/css" href="./style/util.css">
+  <link rel="stylesheet" type="text/css" href="./style/main.css">
 
-        <section class="d-flex mt-4 ms-3">
-          <section class="CardList w-100 d-flex flex-wrap"></section>
-          <!-- <section> -->
-            <section class="w-25 me-3" style="width: 18rem;">
-                <div class="card-body bg-tertiary">
-                <h4 class="card-title mb-4 text-center"><strong> User Testimonials</strong></h4>
-                <div class=" testimonials overflow-scroll">
-                  <div class="d-flex mt-2">
-                    <div class="w-50">
-                      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span><br><br>
-                      <strong >Tim Johnson</strong><br>
-                      <strong class="text-primary">Finance Manager</strong>
+  <!-- <link rel="stylesheet" href="./style1.css"> -->
+</head>
+
+<body>
+  <!-- Pills navs -->
+  <div class="bg-blacks bg-dark">
+
+    <div class="blue position-absolute d-none"></div>
+  </div>
+  <!-- <div class=""> -->
+    </div>
+  <section class="vh-100" style="background-color: #cecece;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-5 d-none d-md-block align-self-center">
+                <img src="./images/image.jpg" alt="login form" class="img-fluid mx-auto"
+                  style="border-radius: 1rem 0 0 1rem;" />
+              </div>
+
+              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                      <!-- <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;" ></i> -->
+                      <span class="h1 fw-bold mb-0">iDriveSafe</span>
                     </div>
-                    <div class="align-self-center">
-                      <img src="./profile.png" class="rounded-circle " alt="">
-                    </div> 
-                  </div>
-                  <hr>
+
+                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign In</h5>
+                    <!-- <span class="login100-form-title">
+                            Sign In
+                        </span> -->
+
+                    <!-- <div class="form-outline mb-4">
+                            <label class="form-label" for="form2Example17">Email address</label>
+                          <input type="email" id="form2Example17" class="form-control form-control-lg" />
+                         
+                        </div>
+      
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="form2Example27">Password</label>
+                          <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                          
+                        </div>-->
+
+                    <!-- <div class="pt-1 mb-4">
+                          <button class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                        </div> -->
+
+
+                    <div class="wrap-input100 validate-input form-outline mb-4"
+                      data-validate="Valid email is required: ex@abc.xyz">
+                      <input id="email" class="input100" type="text" name="email" placeholder="Email">
+                      <span class="focus-input100"></span>
+                      <span class="symbol-input100">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </span>
+                    </div>
+
+
+
+                    <div class="wrap-input100 validate-input form-outline mb-4" data-validate="Password is required">
+                      <input id="pass" class="input100" type="password" name="pass" placeholder="Password">
+                      <span class="focus-input100"></span>
+                      <span class="symbol-input100">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </span>
+                    </div>
+
+
+                    <div class="form-outline mb-4 row justify-content-start ms-1 d-flex" onclick="login()">
+                      <button class="login100-form-btn w-30" onclick="login()">
+                        Login
+                      </button>
+                      <a class="small text-muted mt-2" href="./assets/forg.html">Forgot password?</a>
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="./assets/create.html"
+                        style="color: #393f81;"><b>Register here</b></a></p>
+                    </div>
+
+                    <!-- <a class="small text-muted" href="./forg.html">Forgot password?</a>
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="create.html"
+                        style="color: #393f81;"><b>Register here</b></a></p> -->
+                    <!-- <a href="#!" class="small text-muted">Terms of use.</a>
+                        <a href="#!" class="small text-muted">Privacy policy</a> -->
+                 
+
                 </div>
-                </div>
-            </section>
-          </section>
-
-          <script src="./test.js"></script>
-          <script src="./js/testimonial.js"></script>
-          <!-- <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"></script> -->
-    <!-- <script>
-        // Replace the values below with your Firebase project's configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyCjrFNgA9VWB4rcJ5jJGxkY4ZLWX352Uzw",
-            authDomain: "test004-d8807.firebaseapp.com",
-            databaseURL: "https://test004-d8807-default-rtdb.firebaseio.com",
-            projectId: "test004-d8807",
-            storageBucket: "test004-d8807.appspot.com",
-            messagingSenderId: "770130140909",
-            appId: "1:770130140909:web:e8ed98829617e2b0bcf6e4"
-        };
-
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-
-        // Get a reference to the user's account data in the database and delete it when the button is clicked
-        const deleteAccountBtn = document.getElementById("deleteAccountBtn");
-        deleteAccountBtn.addEventListener("click", function () {
-            const userId = firebase.auth().currentUser.uid;
-            const userRef = firebase.database().ref("users/" + userId);
-
-            userRef.remove()
-                .then(() => {
-                    console.log("User account data deleted successfully");
-                })
-                .catch((error) => {
-                    console.error("Error deleting user account data: ", error);
-                });
-        });
-    </script> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+  <!-- Our script must be loaded after firebase references -->
+  <script src="./js/index.js"></script>
+
 </html>

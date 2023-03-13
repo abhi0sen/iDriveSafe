@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+
     <script src="https://kit.fontawesome.com/930dfd426c.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../style/help.css">
@@ -34,34 +35,40 @@
 
         <div>
             <h3>AcciReducer</h3>
-            <div><span class="text-decoration-line-through text-muted">Rs. 1700</span> <span class="text-danger">(70% Off)</span></div>
-            <p class="fs-5">Rs. 1190</p>
-
+            <div><span class="text-decoration-line-through text-muted">Rs. <span id="cutamt">1700</span></span> <span class="text-danger">(70% Off)</span></div>
+            <p class="fs-5" >Rs. <span id="amt">1190</span></p>
             <div class="d-flex">
                 <div>
                     <p>Quantity</p>
                     <button class="btn-dark text-light px-2" id="decre">-</button>
                     <span class="mx-2" id = "price">1</span>
+                    <!-- <input class="mx-2" id = "price" value=1> -->
                     <button class="btn-dark text-light px-2" id="incre">+</button>
                 </div>
-
+                
                 <div>
                     <p class="text-center ms-1">Color </p>
                     <div class="d-flex my-1">
-                    <div class="bg-dark ms-4 mx-2 w-35"></div>
-                    <div class="bg-danger w-35"></div>
-                </div>
+                        <div class="bg-dark ms-4 mx-2 w-35"></div>
+                        <div class="bg-danger w-35"></div>
+                    </div>
                     <!-- <input color="" type="color" value="#0d0d0d" readonly>
-                    <input type="color" value="#fb0a0a" readonly> -->
+                        <input type="color" value="#fb0a0a" readonly> -->
+                    </div>
                 </div>
-            </div>
-
-            <a href="https://test.instamojo.com/@senabhisar/la53c607eaa1e441c8e53fa1ac2a8f111/?ref=preview" target="_blank" rel="noopener noreferrer"><button class="btn btn-success mt-4">Buy</button></a>
-
+                
+                <!-- <a href="https://test.instamojo.com/@senabhisar/la53c607eaa1e441c8e53fa1ac2a8f111/?ref=preview" target="_blank" rel="noopener noreferrer"><button class="btn btn-success mt-4">Buy</button></a> -->
+                <form action="./index.php" method="post" target="_blank">
+                    <input type="text" readonly id="cost" name="cost" value=1190 hidden>
+            <button class="btn btn-success mt-4"id="buy" type="submit">Buy</button>
+        </form>
             <p class="align-self-end mt-5">**Compatible with any two wheeler vehicle</p>
         </div>
 
     </div>
     <script src="../js/help.js"></script>
+    <script>
+
+    </script>
 </body>
 </html>

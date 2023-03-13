@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDriveSafe</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  <link rel="stylesheet" href="./style.css">
+    
+  </head>
+  <body>
+    <nav class="navbar-default bg-dark p-2">
+      <ul class="ms-5 nav ps-4">
+        <li class="mr-3 nav-item high ms-3"><a class="nav-link bg-light text-dark " href="#"> Home</a></li>
+        <li class=" mr-3 nav-item high"><a class=" nav-link " href="../assets/about.html"> About Us</a></li>
+        <li class=" mr-3 nav-item high"><a class=" nav-link" href="./assets/help.html"> Help</a></li>
+        <li class=" mr-4 nav-item high"><a class=" nav-link" href="./assets/news.html"> Update</a></li>
+        <li class=" mr-3 nav-item"><select class="nav-link w-50 align-middle" id="my-select">State</select></li>
+        <!-- <li class="text-light mr-3 list-group-item bg-dark"><select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="bg-dark text-light border-0 w-50 overflow-auto" required></select></li> -->
+
+            <!-- <li class="text-light mr-3 list-group-item bg-dark ms-auto">iDriveSafe</li> -->
+            <li class="nav-item dropdown ms-auto">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  iDriveSafe
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./login.html">Log In</a></li>
+                  <li><a class="dropdown-item" href="./assets/create.html">Register</a></li>
+                  <li><body>
+                    <button onclick="deleteAccount()">Delete Account</button>
+
+                </li>
+                </ul>
+              </li>
+            </ul>
+            <img src="./logo.png" class="rounded-circle position-absolute top-0 w-6" alt="...">
+        </nav>
+        <!-- <section class="CardList d-flex flex-wrap">
+        </section> -->
+        <!-- <script language="javascript">print_state("sts");</script> -->
+
+        <section class="d-flex mt-4 ms-3">
+          <section class="CardList w-100 d-flex flex-wrap"></section>
+          <!-- <section> -->
+            <section class="w-25 me-3" style="width: 18rem;">
+                <div class="card-body bg-tertiary">
+                <h4 class="card-title mb-4 text-center"><strong> User Testimonials</strong></h4>
+                <div class=" testimonials overflow-scroll">
+                  <div class="d-flex mt-2">
+                    <div class="w-50">
+                      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span><br><br>
+                      <strong >Tim Johnson</strong><br>
+                      <strong class="text-primary">Finance Manager</strong>
+                    </div>
+                    <div class="align-self-center">
+                      <img src="./profile.png" class="rounded-circle " alt="">
+                    </div> 
+                  </div>
+                  <hr>
+                </div>
+                </div>
+            </section>
+          </section>
+
+          <script src="./test.js"></script>
+          <script src="./js/testimonial.js"></script>
+          <!DOCTYPE html>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyCjrFNgA9VWB4rcJ5jJGxkY4ZLWX352Uzw",
+        authDomain: "test004-d8807.firebaseapp.com",
+        databaseURL: "https://test004-d8807-default-rtdb.firebaseio.com",
+        projectId: "test004-d8807",
+        storageBucket: "test004-d8807.appspot.com",
+        messagingSenderId: "770130140909",
+        appId: "1:770130140909:web:e8ed98829617e2b0bcf6e4"
+    };
+
+
+    firebase.initializeApp(firebaseConfig);
+    const database = firebase.database()
+
+    function deleteAccount() {
+        // Display confirmation dialog
+        firebase.auth().onAuthStateChanged((user) => {
+          if (user) {
+              // User is signed in, so delete their account
+              const uid = user.uid;
+              const email = user.email;
+
+              // Delete the user's data from the database
+              database.ref(`users/${uid}`).remove();
+
+              // Delete the user's account
+              user.delete()
+                  .then(() => {
+                      // Account deleted successfully
+                      alert(`Account for ${email} deleted successfully!`);
+                  })
+                  .catch((error) => {
+                      // An error occurred
+                      alert(`Error deleting account: ${error.message}`);
+                  });
+          } else {
+              // No user is signed in
+              alert('No user is currently signed in!');
+          }
+      });
+
+   }
+
+    </script>
+
+</body>
+</html>
