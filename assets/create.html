@@ -43,14 +43,7 @@
 </head>
 
 <body>
-    <!-- Pills navs -->
-    <div class="bg-blacks bg-dark">
-
-        <div class="blue position-absolute d-none"></div>
-    </div>
-    <!-- <div class=""> -->
-    </div>
-    <section class="vh-100" style="background-color: #cecece;">
+    <section class="vh-100" id="mainSection" style="background-color: #cecece;">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-xl-10">
@@ -98,7 +91,18 @@
                                                 <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
                                             </span>
                                         </div>
-
+                                        
+                                        
+                                        <div class="wrap-input100 validate-input form-outline mb-3"
+                                            data-validate="Address is required">
+                                            <input class="input100" type="text" name="address" id="address"
+                                                placeholder="Address">
+                                            <span class="focus-input100"></span>
+                                            <span class="symbol-input100">
+                                                <i class="fa-solid fa-location" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        
 
                                         <div class="wrap-input100 validate-input form-outline mb-3"
                                             data-validate="Password is required">
@@ -109,9 +113,11 @@
                                             </span>
                                         </div>
 
+                                        <div id="recaptcha-container"></div>
+
 
                                         <div class="form-outline mb-2 row justify-content-start ms-2 d-flex">
-                                            <button class="login100-form-btn w-30" onclick="register()">
+                                            <button class="login100-form-btn w-30 phnAth">
                                                 Sign Up
                                             </button>
                                             <p class="mb-5 pb-lg-2 mt-1" style="color: #393f81;">Already have an account? <a href="../login.html"
@@ -139,6 +145,42 @@
             </div>
         </div>
     </section>
+
+    <div class="phone position-absolute p-3 mb-5 rounded  d-none" id="phone" style="z-index:10;">
+        <!-- <iframe class=" w-75" src="./phone_ui.html" ></iframe> -->
+        <div class="w-100">
+    
+          <div class="text-center bg-light border border-1 border-dark">
+         
+           <div class="card-head bg-dark text-light p-2">
+             <img src="../images/mob.png" class="w-50">
+             <h5 class="mb-2">OTP VERIFICATION</h5>
+             <div>
+               <small>Code has been sent</small>
+             </div>
+           </div>
+    
+         <!-- <form> -->
+           <div class="input-container d-flex flex-row justify-content-center mt-2">
+             <input type="text" id="verificationCode" class="m-1 text-center form-control rounded" maxlength="6">
+           </div>
+         
+          <div>
+            <small>
+              Didn't get the otp?
+             <a href="#" class="text-decoration-none"> Resend</a>
+            </small>
+          </div>
+         
+          <div class="mt-3 mb-5">
+            <button class="btn btn-success mb-3 px-4 verify-btn phnAth">Verify</button>
+          </div>
+        <!-- </form> -->
+         
+          </div>
+         
+         </div>
+      </div>
 
 </body>
 <!-- The core Firebase JS SDK is always required and must be listed first -->

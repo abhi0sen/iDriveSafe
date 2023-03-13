@@ -21,8 +21,12 @@ function register() {
   password = document.getElementById('password').value
   full_name = document.getElementById('name').value
   mobile = document.getElementById('mobile').value
+  if (mobile["0"] != "+"){
+    mobile = "+91 "+ mobile;
+  }
+  address = document.getElementById('address').value
   // milk_before_cereal = document.getElementById('milk_before_cereal').value
-
+  console.log(address);
   // Validate input fields
   if (validate_email(email) == false || validate_password(password) == false) {
     alert('Email or Password is not correct')
@@ -47,6 +51,7 @@ function register() {
       var user_data = {
         email: email,
         full_name: full_name,
+        address: address,
         mobile: mobile,
         last_login: Date.now()
       }
@@ -152,6 +157,67 @@ function validate_field(field) {
   }
 }
 
+phnAth = document.getElementsByClassName('phnAth')[0];
+verify = document.getElementsByClassName('phnAth')[1];
+
+phone = document.getElementById('phone')
+mainSection = document.getElementById('mainSection')
+phnAth.onclick = () => {
+  mainSection.style.opacity = 0.3;
+  phoneAuth();
+  phone.classList.remove("d-none")
+}
+
+window.onload = function () {
+  render();
+};
+
+function render() {
+  window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+  recaptchaVerifier.render();
+}
+
+function phoneAuth() {
+  //get the number
+  var number = document.getElementById('mobile').value;
+  if (number["0"] != "+"){
+    number = "+91 "+ number;
+  }
+  //phone number authentication function of firebase
+  //it takes two parameter first one is number,,,second one is recaptcha
+  console.log(number)
+  firebase.auth().signInWithPhoneNumber(number, window.recaptchaVerifier).then(function (confirmationResult) {
+      //s is in lowercase
+      console.log("jhds")
+      window.confirmationResult = confirmationResult;
+      coderesult = confirmationResult;
+      console.log(coderesult);
+      alert("Message sent to Your Phone No");
+  }).catch(function (error) {
+      alert(error.message);
+  });
+}
+
+function codeverify() {
+  var code = document.getElementById('verificationCode').value;
+  coderesult.confirm(code).then(function (result) {
+      alert("Successfully registered");
+      var user = result.user;
+      console.log(user);
+      register();
+      
+      // return true;
+  }).catch(function (error) {
+      alert(error.message);
+      // return false;
+  });
+}
+
+verify.onclick = () => {
+  mainSection.style.opacity = 0.3;
+  codeverify();
+  phone.classList.add("d-none")
+}
 
 // let a = document.getElementById("register")
 // a.onclick = () => {

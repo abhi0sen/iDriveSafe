@@ -461,3 +461,9 @@ iframe {
     opacity: 1;
   }
 }
+
+.phone{
+  height:30%;
+  top:10%;
+  left:40%;
+}
